@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url("/sf-pro-display/SFPRODISPLAYBOLD.OTF");
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("/sf-pro-display/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+  font-family: "SF Pro Medium";
+  src: url("/sf-pro-display/SFPRODISPLAYMEDIUM.OTF");
+}
+
+html {
+  font-size: 10px;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --onboarding-bg: #f6f9f9;
+  --app-btn-blue: #0a58e6;
+  --special-gray: #eaf0f3;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Figtree", Helvetica, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.sf-pro-bold {
+  font-family: "SF Pro Bold";
+}
+.sf-pro {
+  font-family: "SF Pro", sans-serif;
+}
+.sf-pro-medium {
+  font-family: "SF Pro Medium", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--onboarding-bg) inset !important;
+  box-shadow: 0 0 0px 1000px var(--onboarding-bg) inset !important;
+  -webkit-text-fill-color: #000 !important;
 }
