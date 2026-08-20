@@ -4,14 +4,14 @@ interface inventoryEntry {
   img: string;
   name: string;
   price: number;
-  ammount: number;
+  amount: number;
 }
 
 const InventoryEntry: React.FC<inventoryEntry> = ({
   img,
   name,
   price,
-  ammount,
+  amount,
 }) => {
   const xml: React.ReactNode = (
     <li className="flex py-[0.8rem]">
@@ -33,13 +33,13 @@ const InventoryEntry: React.FC<inventoryEntry> = ({
         </data>
       </div>
 
-      {/* AMMOUNT */}
+      {/* AMOUNT */}
       <div className="ml-auto text-center pt-[1.1rem]">
         <data
-          value={ammount}
+          value={amount}
           className="sf-pro-bold text-[2rem] leading-[2.4rem] mb-[0.4rem] block"
         >
-          {ammount}
+          {amount}
         </data>
         <span className="sf-pro text-[1.2rem] leading-[1.4rem] text-[#607D8B]">
           in stock
