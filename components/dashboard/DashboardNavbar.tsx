@@ -20,7 +20,7 @@ const DashboardNavbar: React.FC = () => {
 
   // XML
   const xml: React.ReactNode = (
-    <footer className="fixed z-10 bottom-0 left-0 w-full bg-white/60 shadow-[0px_-2px_250px_rgba(0,0,0,0.05)] rounded-tl-[2.4rem] rounded-tr-[2.4rem] pt-[1.2rem] pb-[2.4rem]">
+    <footer className="fixed z-10 bottom-0 left-[50%] w-full bg-white/60 shadow-[0px_-2px_250px_rgba(0,0,0,0.05)] rounded-tl-[2.4rem] rounded-tr-[2.4rem] pt-[1.2rem] pb-[2.4rem] max-w-200 translate-x-[-50%]">
       <ScreenScale type="nav">
         <ul className="flex items-center">
           {/* HOME */}

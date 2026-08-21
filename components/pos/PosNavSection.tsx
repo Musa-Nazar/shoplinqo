@@ -4,18 +4,17 @@ import ScreenScale from "../utils/ScreenScale";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
-const PosNavSection: React.FC = () => {
-  // GET PAGE TYPE
-  const searchParams = useSearchParams();
-  const pageType = searchParams.get("type");
-  const isByItem = !pageType || pageType === "item";
-  const isByAmount = pageType === "amount";
+interface posNavSection {
+  isByItem: boolean;
+  isByAmount: boolean;
+}
 
+const PosNavSection: React.FC<posNavSection> = ({ isByItem, isByAmount }) => {
   // XML
   const xml = (
     <ScreenScale
       type="nav"
-      className="flex bg-[rgba(118,118,128,.12)] rounded-[10rem] mb-[1.6rem]"
+      className="flex bg-[rgba(118,118,128,.12)] rounded-[10rem]"
     >
       {/* BY ITEM */}
       <Link
@@ -33,7 +32,7 @@ const PosNavSection: React.FC = () => {
 
       {/* BY AMOUNT */}
       <Link
-        href="/pos?type=item"
+        href="/pos?type=amount"
         className={`rounded-4xl py-[0.6rem] px-[0.6rem] text-[1.3333rem] sf-pro-medium leading-[1.9rem] flex items-center justify-center gap-[0.8rem] flex-1 ${isByAmount ? "bg-(--app-btn-blue) text-white font-[590]" : "font-[510]"}`}
       >
         <Image

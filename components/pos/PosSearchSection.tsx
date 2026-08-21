@@ -3,7 +3,10 @@ import ScreenScale from "../utils/ScreenScale";
 
 const PosSearchSection: React.FC = () => {
   const xml: React.ReactNode = (
-    <ScreenScale type="section" className="flex gap-[0.6rem] mb-[1.6rem]">
+    <ScreenScale
+      type="section"
+      className="flex gap-[0.6rem] mb-[1.6rem] mt-[1.6rem]"
+    >
       {/* SEARCH */}
       <div className="flex rounded-[10rem] bg-white px-[1.6rem] py-[1.1rem] flex-1">
         {/* LABEL/ ICON */}

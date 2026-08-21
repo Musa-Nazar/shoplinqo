@@ -4,7 +4,7 @@ import InventoryOverviewSection from "@/components/Inventory/InventoryOverviewSe
 
 const Inventory: React.FC = () => {
   const xml: React.ReactNode = (
-    <main className="h-dvh overflow-auto hide-scroll bar bg-(--special-gray) pb-38">
+    <main className="h-dvh overflow-auto hide-scroll bar bg-(--special-gray) pb-38 max-w-200">
       <InventoryHeaderSection />
       <InventoryOverviewSection />
       <InventoryEntries />
