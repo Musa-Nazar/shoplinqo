@@ -1,44 +1,20 @@
-/* Frame 391 */
+/* Partial */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px;
-gap: 12px;
-
-width: 371px;
-height: 48px;
-
-/* Primary */
-background: #0A58E6;
-border-radius: 36px;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-/* Record Sale */
-
-width: 92px;
-height: 19px;
+width: 60px;
+height: 14px;
 
 font-family: 'SF Pro';
 font-style: normal;
-font-weight: 510;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-letter-spacing: -0.08px;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: right;
 
-/* White */
-color: #FFFFFF;
+/* System/Blue Gray */
+color: #607D8B;
 
 
 /* Inside auto layout */
 flex: none;
-order: 1;
+order: 0;
 flex-grow: 0;
