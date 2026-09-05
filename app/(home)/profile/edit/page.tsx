@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const EditProfile: React.FC = () => {
   const xml: React.ReactNode = (
-    <main className="h-dvh relative z-0 overflow-auto hide-scrollbar bg-(--onboarding-bg)">
+    <main className="h-dvh relative z-0 overflow-auto hide-scrollbar bg-(--onboarding-bg) pb-8">
       <ProfileHeaderSection path="/profile" />
       <ProfileEditForm />
 
