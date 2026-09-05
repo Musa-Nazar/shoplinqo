@@ -1,6 +1,26 @@
-/* +234 911 611 3355 */
+/* Frame 391 */
 
-width: 147px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 12px;
+gap: 12px;
+
+position: absolute;
+width: 371px;
+height: 51px;
+left: 16px;
+top: 723px;
+
+/* Primary */
+background: #0A58E6;
+border-radius: 36px;
+
+/* Save Changes */
+
+width: 109px;
 height: 19px;
 
 font-family: 'SF Pro';
@@ -9,12 +29,13 @@ font-weight: 510;
 font-size: 16px;
 line-height: 19px;
 /* identical to box height */
-text-align: center;
+letter-spacing: -0.08px;
 
-color: #000000;
+/* White */
+color: #FFFFFF;
 
 
 /* Inside auto layout */
 flex: none;
-order: 1;
+order: 0;
 flex-grow: 0;

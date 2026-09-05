@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ScreenScale from "../utils/ScreenScale";
 import ProfileInfoCard from "./ProfileInfoCard";
+import Link from "next/link";
 
 const ProfileMainSection: React.FC = () => {
   const xml: React.ReactNode = (
@@ -18,13 +19,43 @@ const ProfileMainSection: React.FC = () => {
         Usman Dayyab
       </h3>
       {/* EDIT BUTTON */}
-      <button className="sf-pro-medium font-medium text-[1.2rem] leading-[1.4rem] tracking-[-.08px] text-white py-[0.4rem] px-[1.2rem] bg-(--app-btn-blue) rounded-[3.6rem] mx-auto block">
+      <Link
+        href="/profile/edit"
+        className="sf-pro-medium font-medium text-[1.2rem] leading-[1.4rem] tracking-[-.08px] text-white py-[0.4rem] px-[1.2rem] bg-(--app-btn-blue) rounded-[3.6rem] mx-auto block w-fit mb-8"
+      >
         Edit Profile
-      </button>
+      </Link>
 
       {/* USER DETAILS */}
-      <ScreenScale type="ul" className="bg-white">
-        <ProfileInfoCard img="" title="" det="" />
+      <ScreenScale
+        type="ul"
+        className="bg-white p-[1.2rem] [&>li]:mb-[0.8rem] [&>li:last-child]:mb-0"
+      >
+        <ProfileInfoCard
+          img="/profile-phone.png"
+          title="Phone"
+          det="+234 911 611 3355"
+        />
+        <ProfileInfoCard
+          img="/onboarding_store_solid.png"
+          title="Business Name"
+          det="Audu Nexus 5.1"
+        />
+        <ProfileInfoCard
+          img="/onboarding_city_solid.png"
+          title="City"
+          det="Kano"
+        />
+        <ProfileInfoCard
+          img="/onbaording_map_solid.png"
+          title="Market Location"
+          det="Kantin Kwari"
+        />
+        <ProfileInfoCard
+          img="/location_pin.png"
+          title="Address"
+          det="No 72, Layin Bosse DanKurmi"
+        />
       </ScreenScale>
     </section>
   );
