@@ -16,13 +16,19 @@ const InventoryHeaderSection: React.FC = () => {
       />
 
       {/* CONTENT */}
-      <ScreenScale type="div" className="relative pt-[0.9rem]">
+      <ScreenScale
+        type="div"
+        className="relative pt-[0.9rem] flex items-center justify-between"
+      >
+        {/* DUMMY */}
+        <div className="w-[4.8rem] invisible"></div>
+
         <h1 className="sf-pro-medium font-[590] text-[2.4rem] leading-[2.9rem] text-center">
           Inventory
         </h1>
 
         {/* SEARCH */}
-        <div className="absolute top-0 right-0 z-1">
+        <div>
           <Image
             src="/inventory-search.png"
             alt="search"
